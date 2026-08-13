@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+
+    <button id="theme-btn">🌙</button>
+</nav>
+
+<header class="hero" id="home">
+
+    <img src="profile.png" alt="Vikas" class="profile">
+
+    <h1>Hi, I'm Vikas</h1>
+
+    <h2>Frontend Web Developer</h2>
+
+    <p>I'm <span id="typing"></span></p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+
+    <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="resume.pdf" download class="btn btn-outline">Download CV</a>
+    </div>
+
+</header>
+
+<section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+
+    <p>
+        Hi, I'm Vikas. I am learning Web Development.
+        I enjoy creating websites using HTML, CSS and JavaScript.
+    </p>
+</section>
+
+<section id="skills" class="skills" data-aos="fade-right">
+
+    <h2>My Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar">
+            <div class="html"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar">
+            <div class="css"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar">
+            <div class="js"></div>
+        </div>
+    </div>
+
+</section>
+
+<section id="projects" class="projects" data-aos="zoom-in">
+
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <div class="project-icon">💻</div>
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+                My personal portfolio website created using
+                HTML, CSS and JavaScript.
+            </p>
+
+            <div class="project-buttons">
+                <a href="#" class="btn">Live Demo</a>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-icon">🚀</div>
+
+            <h3>Future Project</h3>
+
+            <p>
+                I am currently learning more about web development.
+                A new project will be added here soon.
+            </p>
+
+            <div class="project-buttons">
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-icon">⚡</div>
+
+            <h3>JavaScript Project</h3>
+
+            <p>
+                An interactive JavaScript project will be
+                added here as I continue learning.
+            </p>
+
+            <div class="project-buttons">
+                <a href="#skills" class="btn">My Skills</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" data-aos="fade-left">
+
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Your Email"
+        required
+    >
+
+    <textarea
+        id="message"
+        placeholder="Your Message"
+        rows="5"
+        required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+
+</form>
+
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+
+</section>
+
+<footer>
+
+    <div class="social-links">
+        <a href="https://github.com/vikas0311" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/vikas-sharma-123456789" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/itz_vikas_0311/" target="_blank">Instagram</a>
+    </div>
+
+    <p>© 2026 Vikas | All Rights Reserved</p>
+
+</footer>
+
+<!-- Scroll To Top Button -->
+<button id="topBtn" title="Go to top">⬆️</button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
